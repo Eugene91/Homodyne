@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name digikey-kicad-library)(type KiCad)(uri /home/evgeny/Projects/Astana/Electronics/digikey-kicad-library)(options "")(descr "")(disabled))
+  (lib (name digikey-footprints)(type KiCad)(uri /home/evgeny/Projects/Astana/Electronics/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+)

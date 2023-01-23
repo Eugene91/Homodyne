@@ -1,0 +1,235 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Amplifier_Operational_OPA847xD
+#
+DEF Amplifier_Operational_OPA847xD U 0 5 Y Y 1 F N
+F0 "U" -50 250 50 H V L CNN
+F1 "Amplifier_Operational_OPA847xD" -50 150 50 H V L CNN
+F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 0 0 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+ALIAS OPA847xD
+$FPLIST
+ SOIC*3.9x4.9mm*P1.27mm*
+$ENDFPLIST
+DRAW
+P 4 0 1 10 -200 200 200 0 -200 -200 -200 200 f
+X V- 4 -100 -300 150 U 50 50 0 1 W
+X V+ 7 -100 300 150 D 50 50 0 1 W
+X NC 1 -200 200 100 D 50 50 1 1 N N
+X - 2 -300 -100 100 R 50 50 1 1 I
+X + 3 -300 100 100 R 50 50 1 1 I
+X NC 5 -200 -200 150 U 50 50 1 1 N N
+X ~ 6 300 0 100 L 50 50 1 1 O
+X ~DIS 8 0 -300 200 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_01x03_Male
+#
+DEF Connector_Conn_01x03_Male J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Conn_01x03_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+S 34 105 0 95 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+P 2 1 1 6 50 100 34 100 N
+X Pin_1 1 200 100 150 L 50 50 1 1 P
+X Pin_2 2 200 0 150 L 50 50 1 1 P
+X Pin_3 3 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_CP
+#
+DEF Device_CP C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_CP" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -90 20 90 40 0 1 0 N
+S 90 -20 -90 -40 0 1 0 F
+P 2 0 1 0 -70 90 -30 90 N
+P 2 0 1 0 -50 110 -50 70 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Homodyne1-eagle-import_GND
+#
+DEF Homodyne1-eagle-import_GND #SUPPLY 0 40 Y Y 1 L P
+F0 "#SUPPLY" 0 0 50 H I C CNN
+F1 "Homodyne1-eagle-import_GND" -75 -125 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -50 0 50 0 N
+P 2 1 0 0 0 -50 -50 0 N
+P 2 1 0 0 50 0 0 -50 N
+X GND 1 0 100 100 D 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# Regulator_Linear_LM337_SOT223
+#
+DEF Regulator_Linear_LM337_SOT223 U 0 10 Y Y 1 F N
+F0 "U" -150 -125 50 H V C CNN
+F1 "Regulator_Linear_LM337_SOT223" 0 -125 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" 0 -200 50 H I C CIN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SOT?223*
+$ENDFPLIST
+DRAW
+S -200 200 200 -75 0 1 10 f
+X ADJ 1 0 300 100 D 50 50 1 1 I
+X VI 2 -300 0 100 R 50 50 1 1 W
+X VO 3 300 0 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# ad5174_PS-1.0-6B
+#
+DEF ad5174_PS-1.0-6B PD 0 50 Y N 1 F N
+F0 "PD" -100 -250 50 H V C CNN
+F1 "ad5174_PS-1.0-6B" 0 150 50 H V C CNN
+F2 "TO_SOT_Packages_THT:TO-52-3" 0 -550 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 1 8 -50 -100 -50 -200 N
+P 2 1 1 0 -30 -80 -10 -80 N
+P 2 1 1 0 50 -150 -50 -150 N
+P 3 1 1 0 30 -20 -30 -80 -30 -60 N
+P 4 1 1 8 50 -200 50 -100 -50 -150 50 -200 N
+P 5 1 1 0 80 -20 20 -80 20 -60 20 -80 40 -80 N
+X K 1 -150 -150 100 R 50 50 1 1 P
+X CASE 2 50 -300 100 U 50 50 1 1 P
+X A 3 150 -150 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Coaxial-Connectors-RF_5-1814832-1
+#
+DEF dk_Coaxial-Connectors-RF_5-1814832-1 J 0 40 Y Y 1 F N
+F0 "J" -100 50 60 H V C CNN
+F1 "dk_Coaxial-Connectors-RF_5-1814832-1" 50 -100 60 H V L CNN
+F2 "digikey-footprints:RF_SMA_Vertical_5-1814832-1" 200 200 60 H I L CNN
+F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" 200 300 60 H I L CNN
+F4 "A97594-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "5-1814832-1" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Coaxial Connectors (RF)" 200 700 60 H I L CNN "Family"
+F8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN SMA JACK STR 50 OHM PCB" 200 1000 60 H I L CNN "Description"
+F11 "TE Connectivity AMP Connectors" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+A 2 -1 52 1789 -266 0 1 0 N -50 0 50 -25
+A 3 1 53 271 -1789 0 1 0 N 50 25 -50 0
+C 0 0 25 0 1 0 N
+X ~ 1 0 -200 145 U 50 50 1 1 P
+X ~ 2 200 0 175 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_PMIC-Voltage-Regulators-Linear_LM317DCYR
+#
+DEF dk_PMIC-Voltage-Regulators-Linear_LM317DCYR U 0 20 Y Y 1 F N
+F0 "U" 0 150 60 H V C CNN
+F1 "dk_PMIC-Voltage-Regulators-Linear_LM317DCYR" 0 250 60 H V C CNN
+F2 "digikey-footprints:SOT-223-4" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm317" 200 300 60 H I L CNN
+F4 "296-12602-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LM317DCYR" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm317" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/LM317DCYR/296-12602-1-ND/443738" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC REG LIN POS ADJ 1.5A SOT223-4" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 100 200 -200 0 1 0 f
+X ADJ 1 0 -300 100 U 50 50 1 1 I
+X OUT 2 300 0 100 L 50 50 1 1 w
+X IN 3 -300 0 100 R 50 50 1 1 W
+X OUT 4 300 -100 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+#End Library

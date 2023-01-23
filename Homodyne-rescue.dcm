@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 5-1814832-1-dk_Coaxial-Connectors-RF
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English
+$ENDCMP
+#
+$CMP LM317DCYR-dk_PMIC-Voltage-Regulators-Linear
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm317
+$ENDCMP
+#
+#End Doc Library
